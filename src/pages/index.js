@@ -8,9 +8,9 @@ const PageHome = ({ globalData }) => {
   return render(
     <AppLayout>
       <Helmet>
-        <title>minista blog</title>
+        <title>minista blog with REST API</title>
       </Helmet>
-      <h1>minista blog</h1>
+      <h1>minista blog with REST API</h1>
       <ul>
         {globalData.map((item, index) => (
           <li key={index}>

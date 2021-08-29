@@ -1,6 +1,8 @@
 const path = require("path")
 const glob = require("glob")
+
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+
 const webpackConfig = {
   plugins: [],
 }

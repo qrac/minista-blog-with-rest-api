@@ -8,7 +8,7 @@ const TemplatePost = ({ globalData, pageData }) => {
   return render(
     <AppLayout>
       <Helmet>
-        <title>{pageData.title} - minista blog</title>
+        <title>{pageData.title} - minista blog with REST API</title>
       </Helmet>
       <h1>{pageData.title}</h1>
     </AppLayout>

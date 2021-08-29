@@ -1,0 +1,28 @@
+{
+  "name": "minista-blog-with-rest-api",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "node ./static-rest-api.js && minista",
+    "build": "node ./static-rest-api.js && minista build",
+    "clean": "trash ./dist ./.minista"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "browserslist": [
+    "last 1 Chrome versions",
+    "last 1 Edge versions",
+    "last 1 Firefox versions",
+    "last 1 Safari versions",
+    "last 1 iOS versions",
+    "last 1 ChromeAndroid versions"
+  ],
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.6",
+    "minista": "^0.10.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

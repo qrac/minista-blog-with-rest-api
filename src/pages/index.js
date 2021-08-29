@@ -2,6 +2,9 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { render } from "minista"
 
+import dayjs from "dayjs"
+import "dayjs/locale/ja"
+
 import AppLayout from "../components/app-layout"
 
 const PageHome = ({ globalData }) => {
@@ -12,10 +15,27 @@ const PageHome = ({ globalData }) => {
       </Helmet>
       <section className="section-contents">
         <div className="section-contents-inner">
-          <ul>
+          <ul className="block-posts">
             {globalData.map((item, index) => (
-              <li key={index}>
-                <a href={`/posts/${item.number}/`}>{item.title}</a>
+              <li className="block-posts-item" key={index}>
+                <a
+                  className="block-posts-item-link"
+                  href={`/posts/${item.number}/`}
+                >
+                  <h2 className="block-posts-item-title">{item.title}</h2>
+                </a>
+                <div className="block-posts-item-meta">
+                  <div className="block-posts-item-meta-date">
+                    <span>Published: </span>
+                    <time>{dayjs(item.created_at).format("YYYY.MM.DD")}</time>
+                  </div>
+                  {item.created_at !== item.updated_at && (
+                    <div className="block-posts-item-meta-date">
+                      <span>Updated: </span>
+                      <time>{dayjs(item.updated_at).format("YYYY.MM.DD")}</time>
+                    </div>
+                  )}
+                </div>
               </li>
             ))}
           </ul>

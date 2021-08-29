@@ -35,7 +35,7 @@ api.forEach((page) => {
     new HtmlWebpackPlugin({
       template: path.resolve("src/templates/post.js"),
       templateParameters: { globalData: api, pageData: page },
-      filename: `posts/${page.id}/index.html`,
+      filename: `posts/${page.number}/index.html`,
     })
   )
 })

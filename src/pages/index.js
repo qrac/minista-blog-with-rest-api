@@ -15,7 +15,7 @@ const PageHome = ({ globalData }) => {
           <ul>
             {globalData.map((item, index) => (
               <li key={index}>
-                <a href={`/posts/${item.id}/`}>{item.title}</a>
+                <a href={`/posts/${item.number}/`}>{item.title}</a>
               </li>
             ))}
           </ul>

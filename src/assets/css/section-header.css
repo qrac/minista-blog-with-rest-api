@@ -17,6 +17,8 @@
 .section-header-title {
   display: flex;
   justify-content: center;
+  font-feature-settings: "palt";
+  letter-spacing: 0.05em;
 }
 
 .section-header-title + .section-header-meta {

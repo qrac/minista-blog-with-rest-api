@@ -4,6 +4,9 @@ const glob = require("glob")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 const webpackConfig = {
+  devServer: {
+    open: ["/index.html"],
+  },
   plugins: [],
 }
 

@@ -1,0 +1,36 @@
+/* ---------------------------------------------------
+// Section Header
+//------------------------------------------------- */
+
+.section-header {
+  padding: 60px 0;
+  background-color: var(--theme-bg-3);
+}
+
+.section-header-inner {
+  max-width: var(--theme-site-width);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+.section-header-title {
+  display: flex;
+  justify-content: center;
+}
+
+.section-header-title + .section-header-meta {
+  margin-top: 16px;
+}
+
+.section-header-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.section-header-meta-date {
+  color: var(--theme-tx-3);
+  font-size: 0.75rem;
+}

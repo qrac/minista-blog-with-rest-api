@@ -1,0 +1,14 @@
+/* ---------------------------------------------------
+// Section Contents
+//------------------------------------------------- */
+
+.section-contents {
+  padding: 40px 0;
+}
+
+.section-contents-inner {
+  max-width: var(--theme-site-width);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}

@@ -6,6 +6,7 @@ const apiUrl = "https://api.github.com/repos/qrac/minista/issues"
 const apiParams = {
   params: {
     state: "all",
+    creator: "qrac",
   },
 }
 

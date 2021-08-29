@@ -1,0 +1,49 @@
+/* ---------------------------------------------------
+// App Header
+//------------------------------------------------- */
+
+.app-header {
+  position: relative;
+  padding: 24px 0;
+  background-color: var(--theme-bg-2);
+}
+
+.app-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  max-width: var(--theme-site-width);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+.app-header-title {
+  color: var(--theme-tx-1);
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-family: var(--theme-font-sans-en);
+}
+
+.app-header-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.app-header-nav-link {
+  display: flex;
+  color: var(--theme-tx-1);
+  font-size: 1rem;
+}
+
+.app-header-nav-link:hover {
+  filter: brightness(0.8);
+}
+
+.app-header-nav-link svg {
+  width: 1.25em;
+  height: 1.25em;
+}

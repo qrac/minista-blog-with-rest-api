@@ -1,0 +1,53 @@
+/* ---------------------------------------------------
+// Block Markdown
+//------------------------------------------------- */
+
+.block-markdown {
+  max-width: var(--theme-content-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.block-markdown > *:not(:first-child) {
+  margin-top: 2em;
+}
+
+.block-markdown ul,
+.block-markdown ol {
+  padding-left: 1.5rem;
+}
+
+.block-markdown ul {
+  list-style: circle;
+}
+
+.block-markdown ol {
+  list-style: decimal;
+}
+
+.block-markdown :not(pre) > code {
+  padding: 0.2em 0.5em;
+  background-color: var(--theme-bg-2);
+  border-radius: 2px;
+  color: var(--theme-tx-3);
+  font-size: 0.875rem;
+  font-family: var(--theme-font-mono);
+  word-break: break-all;
+}
+
+.block-markdown pre {
+  background-color: var(--theme-bg-2);
+  border-radius: 2px;
+  color: var(--theme-tx-3);
+  font-family: var(--theme-font-mono);
+  white-space: pre;
+  word-wrap: normal;
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.block-markdown pre > code {
+  display: block;
+  padding: 20px 24px;
+}
